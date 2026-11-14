@@ -1,15 +1,14 @@
-JASVEER PORTFOLIO — STARTER WEBSITE
+JASVEER PORTFOLIO UPDATE
 
-Files:
-- index.html: page content and structure
-- style.css: dark red visual design, responsive layout and animations
-- script.js: scroll reveals, rotating role text and mobile navigation
+Included:
+- Existing warm red / black website theme and cursor-only electric spark effect retained.
+- Added the new JASVEER translucent 3D global-network artwork as a full-width identity banner.
+- Added a Personal Interests section with the hobbies supplied by Jasveer.
 
-Preview:
-Open index.html in Google Chrome. An internet connection is needed for the Google Fonts used in the design; the website itself works without a build step.
+Upload/replace these files in the GitHub repository root:
+index.html
+style.css
+script.js
+jasveer-global-network.png
 
-Before publishing:
-1. Add a professional email and phone number in the Contact section.
-2. Confirm exact wording and dates for work experience.
-3. Review every skill and project for accuracy.
-4. Upload the folder to a GitHub repository and enable GitHub Pages to publish a shareable link.
+Keep all four files together in the repository root. The existing GitHub Pages URL will remain the same.

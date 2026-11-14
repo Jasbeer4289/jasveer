@@ -11,12 +11,13 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
   <div class="noise" aria-hidden="true"></div>
   <header class="topbar">
     <a class="brand" href="#home" aria-label="Jasveer home">J<span>.</span></a>
     <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
     <nav class="nav">
-      <a href="#about">About</a><a href="#skills">Expertise</a><a href="#work">Projects</a><a href="#experience">Experience</a>
+      <a href="#about">About</a><a href="#skills">Expertise</a><a href="#work">Projects</a><a href="#education">Education</a><a href="#experience">Experience</a><a href="#hobbies">Interests</a>
       <a class="nav-cta" href="#contact">Contact <span>↗</span></a>
     </nav>
   </header>
@@ -24,19 +25,17 @@
   <main>
     <section class="hero section" id="home">
       <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="status-dot"></span> IT HARDWARE &amp; TECHNICAL SUPPORT</p>
+        <p class="eyebrow"><span class="status-dot"></span> IT HARDWARE &amp; TECHNICAL SUPPORT // SIGNAL HUB</p>
         <h1>JASVEER<span class="accent">.</span></h1>
         <div class="hero-role"><span class="role-line"></span><span id="rotating-role">IT HARDWARE ENGINEER</span></div>
         <p class="hero-intro">I take on complex hardware and infrastructure issues—from board-level fault isolation and boot failures to storage recovery and live IT support—using structured diagnostics to restore dependable systems.</p>
         <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span>↘</span></a><a class="text-link" href="#about">More about me <span>↓</span></a></div>
       </div>
-      <div class="hero-art reveal" aria-label="Abstract animated technical illustration">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
-        <div class="core"><span>JC</span><small>TECH / 01</small></div>
-        <div class="float-tag tag-top">SYSTEMS // ONLINE</div><div class="float-tag tag-bottom">DIAGNOSE · REPAIR · SUPPORT</div>
-        <div class="crosshair crosshair-one">+</div><div class="crosshair crosshair-two">+</div>
-      </div>
       <div class="hero-bottom"><span>BASED IN BENGALURU, INDIA</span><span>SCROLL TO EXPLORE&nbsp; ↓</span><span>01 — 04</span></div>
+    </section>
+
+    <section class="identity-banner" aria-label="Jasveer global network identity image">
+      <img src="jasveer-global-network.png" alt="JASVEER in translucent three-dimensional lettering over a red global network map" loading="lazy" />
     </section>
 
     <section class="section about" id="about">
@@ -61,19 +60,52 @@
     </section>
 
     <section class="section work" id="work">
-      <div class="section-head reveal"><p class="eyebrow">03 / COMPLEX TECHNICAL CASES</p><h2>Problems solved.<br><span class="muted">Systems brought back.</span></h2><p class="work-intro">A closer look at the kind of difficult, layered technical issues I work through — where symptoms can be misleading, several components may be involved, and every step needs careful verification.</p></div>
+      <div class="section-head reveal"><p class="eyebrow">03 / SELECTED WORK</p><h2>Problems solved.<br><span class="muted">Systems restored.</span></h2></div>
       <div class="project-list">
-        <article class="project reveal"><span class="project-no">01</span><div><p class="case-label">HARDWARE DIAGNOSTICS / BOARD-LEVEL FAULT ISOLATION</p><h3>Dead systems &amp; complex motherboard faults</h3><p><strong>The challenge:</strong> A laptop may show no power, no display, unstable charging or repeated shutdowns — symptoms that can come from different points in the power and motherboard circuits.</p><p><strong>How I approach it:</strong> Start with visual inspection and symptom isolation, check adapter and power-input behaviour, inspect relevant board sections, trace likely power-rail or charging faults, and narrow the fault to a component or circuit area before attempting repair.</p><p><strong>Verification:</strong> Re-test startup, charging, display, thermal behaviour and connected functions after repair instead of relying on a single successful power-on.</p></div><span class="project-arrow">↗</span></article>
-        <article class="project reveal"><span class="project-no">02</span><div><p class="case-label">FIRMWARE / BOOT CHAIN / OS RECOVERY</p><h3>Systems that fail before Windows even starts</h3><p><strong>The challenge:</strong> A machine can become unbootable because of firmware settings, damaged boot records, UEFI/Legacy mismatches, storage detection issues, corrupted system files or failed updates. The visible error is not always the root cause.</p><p><strong>How I approach it:</strong> Separate firmware-level symptoms from OS-level faults; verify BIOS/UEFI configuration, boot mode, boot entries and drive detection; then use suitable recovery media and targeted repair steps. For BIOS recovery or programming, verify the exact model and firmware before proceeding.</p><p><strong>Verification:</strong> Confirm repeatable boots, correct drivers, stable updates and normal operation after deployment — including consistent setup across multiple systems.</p></div><span class="project-arrow">↗</span></article>
-        <article class="project reveal"><span class="project-no">03</span><div><p class="case-label">STORAGE FORENSICS / DATA-PRESERVATION WORKFLOW</p><h3>RAW, inaccessible &amp; undetected SSD / NVMe drives</h3><p><strong>The challenge:</strong> A drive may appear as RAW, disappear intermittently, fail to mount or remain invisible through an enclosure. Repeated repair attempts can make recovery harder if they write to the original media.</p><p><strong>How I approach it:</strong> Check drive detection at the device and system level, validate enclosure and interface compatibility, inspect partition and file-system symptoms, and distinguish connection/controller issues from logical corruption. Prioritize read-only assessment and create a clone or image when practical before recovery attempts.</p><p><strong>Verification:</strong> Check recovered data for readability and completeness where possible, and clearly distinguish recoverable files from cases that need specialist lab-level recovery.</p></div><span class="project-arrow">↗</span></article>
-        <article class="project reveal"><span class="project-no">04</span><div><p class="case-label">NETWORK / CCTV / LIVE ENVIRONMENT SUPPORT</p><h3>Keeping connected school and office systems operational</h3><p><strong>The challenge:</strong> Connectivity complaints can involve cabling, power, IP configuration, router settings, camera links, recording devices or endpoint configuration. A fault in one layer can look like a failure somewhere else.</p><p><strong>How I approach it:</strong> Trace the connection path layer by layer — physical link, power, addressing, gateway and device configuration — then isolate whether the issue sits with the endpoint, network equipment or CCTV path. Check camera feeds, recording status and remote access settings within the authorized environment.</p><p><strong>Verification:</strong> Test access from the intended user location, confirm stable connectivity and recording, and document any remaining limitations for follow-up.</p></div><span class="project-arrow">↗</span></article>
-        <article class="project reveal"><span class="project-no">05</span><div><p class="case-label">CROSS-PLATFORM / END-USER SYSTEM RESTORATION</p><h3>MacBook, printer, deployment &amp; custom PC troubleshooting</h3><p><strong>The challenge:</strong> Peripheral and platform issues often combine driver conflicts, startup behaviour, OS configuration, connectivity, component compatibility and user workflow requirements.</p><p><strong>How I approach it:</strong> Reproduce the fault, isolate hardware from software causes, validate drivers and interfaces, check component compatibility during PC assembly, and use controlled setup steps for printers and multi-system deployments.</p><p><strong>Verification:</strong> Confirm the device works in the real user workflow — printing a test page, detecting peripherals, completing startup and passing basic stability checks.</p></div><span class="project-arrow">↗</span></article>
+        <article class="project reveal"><span class="project-no">01</span><div><h3>Dead-System Diagnostics &amp; Board-Level Fault Isolation</h3><p>Investigate laptops that show no power, intermittent startup or abnormal charging behaviour. Trace faults through the adapter input, charging and power-management stages, inspect board-level components, isolate likely short or open circuits, and carry out chip-level repair where appropriate. Finish with controlled power-up, thermal observation and stability checks.</p></div><span class="project-arrow">↗</span></article>
+        <article class="project reveal"><span class="project-no">02</span><div><h3>Firmware, BIOS/UEFI &amp; Multi-System OS Recovery</h3><p>Work through complex boot failures involving firmware settings, corrupted boot configuration, incompatible drivers and damaged operating-system installations. Diagnose whether the fault is firmware, storage, bootloader or OS related, restore the appropriate layer, then validate startup, device drivers and repeatable deployment across multiple systems.</p></div><span class="project-arrow">↗</span></article>
+        <article class="project reveal"><span class="project-no">03</span><div><h3>Unstable Storage, RAW Volumes &amp; NVMe Data Preservation</h3><p>Assess drives that appear intermittently, show RAW partitions or fail to mount through an enclosure or host system. Check detection and health indicators before selecting a recovery path, protect the source from unnecessary writes, create a sector-level clone when feasible, and verify recovered files or migrated data without overstating recoverability.</p></div><span class="project-arrow">↗</span></article>
+        <article class="project reveal"><span class="project-no">04</span><div><h3>Network, CCTV &amp; Infrastructure Fault Tracing</h3><p>Troubleshoot connectivity problems across routers, switches, endpoints and CCTV recording paths. Follow the signal from physical cabling and power through IP addressing, network reachability and device configuration; isolate whether failures originate at the endpoint, network layer or recorder, then verify camera feeds, recording and access after the fix.</p></div><span class="project-arrow">↗</span></article>
+        <article class="project reveal"><span class="project-no">05</span><div><h3>Cross-Platform Restoration &amp; Peripheral Integration</h3><p>Resolve hardware and startup issues across MacBooks, custom-built PCs and Windows systems, alongside printer driver, queue and connectivity faults. Separate software symptoms from component failures, confirm compatibility and configuration, and perform end-to-end checks so the repaired device, peripheral or workstation is ready for normal use.</p></div><span class="project-arrow">↗</span></article>
+      </div>
+    </section>
+
+    <section class="section education" id="education">
+      <div class="section-head reveal"><p class="eyebrow">04 / EDUCATION &amp; TRAINING</p><h2>Education &amp;<br><span class="muted">specialized training.</span></h2></div>
+      <div class="education-list">
+        <article class="education-card reveal">
+          <div class="education-date">COMPLETED 2021</div>
+          <div><p class="education-type">FORMAL TECHNICAL EDUCATION</p><h3>ITI — Computer Networking &amp; Hardware Maintenance</h3><p>Technical training focused on computer hardware, networking fundamentals, system maintenance and practical troubleshooting.</p><span class="education-status">Course completed · 2021</span></div>
+          <span class="education-mark">01</span>
+        </article>
+        <article class="education-card reveal">
+          <div class="education-date">1-YEAR TRAINING</div>
+          <div><p class="education-type">SPECIALIZED TRAINING · RUSSIA</p><h3>Ethical Hacking &amp; Cybersecurity</h3><p>One year of ethical hacking training through a coaching institute in Russia, focused on cybersecurity fundamentals, vulnerability identification, authorized penetration-testing methodology and responsible security assessment. Institute and certificate details can be added when confirmed. <strong>Reported accuracy: 96%</strong>.</p><span class="education-status">One-year training · Reported accuracy: 96%</span></div>
+          <span class="education-mark">02</span>
+        </article>
+        <article class="education-card reveal">
+          <div class="education-date">COMPLETED 2020</div>
+          <div><p class="education-type">FOUNDATIONAL EDUCATION</p><h3>Class 10</h3><p>Secondary school education.</p><span class="education-status">Completed · 2020</span></div>
+          <span class="education-mark">03</span>
+        </article>
       </div>
     </section>
 
     <section class="section experience" id="experience">
-      <div class="section-head reveal"><p class="eyebrow">04 / EXPERIENCE</p><h2>Where I <span class="accent">work.</span></h2></div>
+      <div class="section-head reveal"><p class="eyebrow">05 / EXPERIENCE</p><h2>Where I <span class="accent">work.</span></h2></div>
       <div class="experience-card reveal"><div class="experience-date">2022 — PRESENT</div><div><h3>IT Administrator</h3><p class="company">The Cambridge International Schools</p><p>Managing and supporting school IT operations where reliability matters to staff and day-to-day activities. Responsibilities include investigating complex endpoint and hardware faults, resolving OS and boot issues, coordinating device setup and maintenance, supporting network and CCTV availability, and restoring user access while minimizing disruption. Work spans routine support through deeper diagnostics, escalation and post-repair verification.</p></div><span class="experience-mark">↗</span></div>
+    </section>
+
+    <section class="section hobbies" id="hobbies">
+      <div class="section-head reveal"><p class="eyebrow">06 / BEYOND THE WORK</p><h2>Personal <span class="accent">interests.</span></h2></div>
+      <div class="hobby-grid">
+        <article class="hobby-card reveal"><span class="hobby-index">01</span><div class="hobby-icon">⚙</div><h3>Automotive Repair &amp; Modification</h3><p>Repairing, upgrading and modifying bikes and cars, with an interest in understanding how machines work and making them better.</p></article>
+        <article class="hobby-card reveal"><span class="hobby-index">02</span><div class="hobby-icon">⛰</div><h3>Adventure Rides &amp; Off-Roading</h3><p>Exploring new routes, taking on challenging terrain and enjoying the technical side of riding and off-road driving.</p></article>
+        <article class="hobby-card reveal"><span class="hobby-index">03</span><div class="hobby-icon">🥊</div><h3>Kickboxing &amp; Hand-to-Hand Combat</h3><p>Training in striking, movement, conditioning and practical combat disciplines with a focus on control and discipline.</p></article>
+        <article class="hobby-card reveal"><span class="hobby-index">04</span><div class="hobby-icon">▤</div><h3>Reading</h3><p>Reading books to keep learning, explore new ideas and build knowledge beyond day-to-day technical work.</p></article>
+        <article class="hobby-card reveal"><span class="hobby-index">05</span><div class="hobby-icon">♡</div><h3>Feeding &amp; Caring for Street Animals</h3><p>Spending time feeding street animals, especially dogs, and supporting their everyday wellbeing wherever possible.</p></article>
+        <article class="hobby-card reveal"><span class="hobby-index">06</span><div class="hobby-icon">♨</div><h3>Cooking</h3><p>Enjoying the process of preparing food, experimenting with flavours and learning new recipes.</p></article>
+      </div>
     </section>
 
     <section class="contact section" id="contact">
